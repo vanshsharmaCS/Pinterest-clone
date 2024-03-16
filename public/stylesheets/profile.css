@@ -495,3 +495,34 @@ Remove or comment-out the code block below to see how the browser will fall-back
   #create-post-btn:hover {
     background-color: #45a049;
   }
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px;
+}
+.gallery-item {
+    width: 300px; /* Adjust this as needed for the medium size */
+    height: 100%; /* Adjust this as needed for the medium size */
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item .gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.gallery-item .gallery-item-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    box-sizing: border-box;
+}

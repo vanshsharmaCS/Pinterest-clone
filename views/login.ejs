@@ -12,10 +12,7 @@
         <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="pin logo" class="img1" />
         <p class="header">Already sign</p>
         <form action="/login" method="post">
-          
-       
         <input type="text" name="username" placeholder="username" class="detail" /><br />
-       
         <input type="password" name="password" placeholder="password" class="detail" /><br />
         <% if(error.length>0){
             error.forEach(function(err){
@@ -23,7 +20,6 @@
                 <p style="color:red;"><%= err %></p>
                 <%
             })
-            
         }%>
         <input type="submit" value="Log In" class="btn int"></input>
 
